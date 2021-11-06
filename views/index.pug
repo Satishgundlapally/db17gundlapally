@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to  I am satishreddy gundlapally doing my lab 10
+  button(type="button", class="btn btn-secondary",onclick="update()") press me 
+  <br>
+
+  div(id="target") Display
+
+  script.  
+        let a =0
+        function update()
+        {
+           a=a+1;
+           document.getElementById("target").innerHTML=a;
+        }
+
+
+        
+ 

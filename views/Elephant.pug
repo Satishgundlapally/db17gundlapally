@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+ 
+  
+        
+ 
+ 
+   - var results = [{"colour":"orange", "age":60,"weight":400},{"colour":"yellow","age":70,"weight":300},{"colour":"blue","age":80,"weight":100}]
+       div(class="container-fluid")
+         div(class="row")
+            each a,b in results
+              div(class="col-sm-2" onClick=`buy(${b})`)
+                p #{a.colour}
+                p #{a.age}
+                p #{a.weight}
+                
+
+
+          
+                script.
+                     function  buy(d){
+
+                        alert(`You purchased item ${d+1}.`)
+
+                     }

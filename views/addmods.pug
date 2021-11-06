@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to  I am satishreddy gundlapally doing my lab 10
+  p `rows are #{query.rows}`
+  p `cols are #{query.cols}`
+  - var rows=Number(query.rows)
+  - var cols=Number(query.cols)
+  if !(Number.isInteger(rows)) || !(Number.isInteger(cols))
+    p there are no values present
+  else if rows > 6
+    p size is greater than 6
+  else if cols > 6
+    p column size is greater than 6
+  else
+   table#outer
+    - for(let i=0; i<query.rows; i++) { 
+       tr#middle
+         - for(let j=0; j<query.cols; j++) { 
+           td= (+i + +j) % query.rows
+         - }
+    - }
+        
+ 
