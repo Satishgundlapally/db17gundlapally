@@ -40,7 +40,7 @@ exports.Elephant_list = async function(req, res) {
 exports.Elephant_view_all_Page = async function(req, res) { 
     try{ 
         theElephants = await Elephant.find(); 
-        res.render('Elephants', { title: 'Elephant Search Results', results: theElephants }); 
+        res.render('Elephant', { title: 'Elephant Search Results', results: theElephants }); 
     } 
     catch(err){ 
         res.status(500); 
