@@ -46,16 +46,16 @@ db.once("open", function(){
  // We can seed the collection if needed on server start 
 async function recreateDB(){ 
   // Delete everything 
-  await Costume.deleteMany(); 
+  await Elephant.deleteMany(); 
  
   let instance1 = new 
-Costume({colour:"orange",  age:60, 
+Elephant({colour:"orange",  age:60, 
 weight:400}); 
 let instance2 = new 
-Costume({colour:"orange",  age:70, 
+Elephant({colour:"orange",  age:70, 
 weight:300});
 let instance3 = new 
-Costume({colour:"orange",  age:80, 
+Elephant({colour:"orange",  age:80, 
 weight:100});
   instance1.save( function(err,doc) { 
       if(err) return console.error(err); 
