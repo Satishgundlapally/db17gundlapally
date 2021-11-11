@@ -13,7 +13,7 @@ router.get('/', api_controller.api);
 /// Elephant ROUTES /// 
  
 // POST request for creating a Elephant.  
-router.post('/Elephants', Elephant_controller.Elephant_create_post); 
+router.post('/Elephant', Elephant_controller.Elephant_create_post); 
  
 // DELETE request to delete Elephant. 
 router.delete('/Elephant/:id', Elephant_controller.Elephant_delete); 
