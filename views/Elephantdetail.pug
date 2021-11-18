@@ -1,0 +1,22 @@
+extends layout 
+ 
+block content 
+  h1= title 
+ 
+  - let Elephantid = toShow._id 
+  - let colour = toShow.colour 
+  - let age = toShow.age 
+  - let weight = toShow.weight 
+  div 
+    div.row 
+      div(class='ElephantAttr mr-3') Elephant ID is: 
+      div #{Elephantid} 
+    div.row 
+      div(class='ElephantAttr mr-3') Elephant Type is: 
+      div #{colour} 
+    div.row 
+      div(class='ElephantAttr mr-3') Elephant Size is: 
+      div #{weight} 
+    div.row 
+      div(class='ElephantAttr mr-3') Elephant Cost is: 
+      div #{age} 

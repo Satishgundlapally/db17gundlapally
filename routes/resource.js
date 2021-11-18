@@ -27,5 +27,18 @@ router.get('/Elephant/:id', Elephant_controller.Elephant_detail);
  
 // GET request for list of all Elephant items. 
 router.get('/Elephant', Elephant_controller.Elephant_list); 
+
+/* GET detail Elephant page */ 
+router.get('/detail', Elephant_controller.Elephant_view_one_Page);
+
+/* GET create Elephant page */ 
+router.get('/create', Elephant_controller.Elephant_create_Page); 
+
+/* GET create update page */ 
+router.get('/update', Elephant_controller.Elephant_update_Page); 
+
+/* GET create Elephant page */ 
+router.get('/delete', Elephant_controller.Elephant_delete_Page); 
+ 
  
 module.exports = router; 
